@@ -1,0 +1,83 @@
+.text:0045BD40 sub_45BD40      proc near               ; CODE XREF: .text:00406B49p
+.text:0045BD40                                         ; .text:0045BEEEp ...
+.text:0045BD40
+.text:0045BD40 var_14          = dword ptr -14h
+.text:0045BD40
+.text:0045BD40                 push    esi
+.text:0045BD41                 mov     esi, ecx
+.text:0045BD43                 movss   xmm0, dword ptr [esi+48h]
+.text:0045BD48                 ucomiss xmm0, ds:dword_20058B0
+.text:0045BD4F                 lahf
+.text:0045BD50                 test    ah, 44h
+.text:0045BD53                 jnp     loc_45BDFF
+.text:0045BD59                 mov     ecx, [esi+44h]
+.text:0045BD5C                 mov     eax, [ecx]
+.text:0045BD5E                 mov     edx, [eax+3Ch]
+.text:0045BD61                 call    edx
+.text:0045BD63                 mov     ecx, [esi+28h]
+.text:0045BD66                 test    ecx, ecx
+.text:0045BD68                 jz      short loc_45BD82
+.text:0045BD6A                 call    sub_4B07D0
+.text:0045BD6F                 test    al, al
+.text:0045BD71                 jz      short loc_45BD82
+.text:0045BD73                 mov     ecx, [esi+28h]
+.text:0045BD76                 mov     eax, [ecx]
+.text:0045BD78                 mov     edx, [eax+9Ch]
+.text:0045BD7E                 push    0
+.text:0045BD80                 call    edx
+.text:0045BD82
+.text:0045BD82 loc_45BD82:                             ; CODE XREF: sub_45BD40+28j
+.text:0045BD82                                         ; sub_45BD40+31j
+.text:0045BD82                 mov     eax, [esi+40h]
+.text:0045BD85                 test    eax, eax
+.text:0045BD87                 push    edi
+.text:0045BD88                 lea     edi, [esi+34h]
+.text:0045BD8B                 lea     ecx, [eax+1]
+.text:0045BD8E                 mov     [edi+0Ch], ecx
+.text:0045BD91                 jnz     short loc_45BD9E
+.text:0045BD93                 mov     ecx, edi
+.text:0045BD95                 call    ds:?GetElapsedTime@wxStopWatch@@IBEJXZ ; wxStopWatch::GetElapsedTime(void)
+.text:0045BD9B                 mov     [edi+8], eax
+.text:0045BD9E
+.text:0045BD9E loc_45BD9E:                             ; CODE XREF: sub_45BD40+51j
+.text:0045BD9E                 mov     ecx, [esi+2Ch]
+.text:0045BDA1                 test    ecx, ecx
+.text:0045BDA3                 pop     edi
+.text:0045BDA4                 jz      short loc_45BDBE
+.text:0045BDA6                 call    sub_4E78E0
+.text:0045BDAB                 fld     dword ptr [esi+54h]
+.text:0045BDAE                 push    1
+.text:0045BDB0                 push    0
+.text:0045BDB2                 push    ecx
+.text:0045BDB3                 mov     ecx, [esi+2Ch]
+.text:0045BDB6                 fstp    [esp+14h+var_14]
+.text:0045BDB9                 call    sub_4F6710
+.text:0045BDBE
+.text:0045BDBE loc_45BDBE:                             ; CODE XREF: sub_45BD40+64j
+.text:0045BDBE                 movss   xmm0, ds:dword_20058B0
+.text:0045BDC6                 movss   dword ptr [esi+48h], xmm0
+.text:0045BDCB                 movss   dword ptr [esi+54h], xmm0
+.text:0045BDD0                 mov     esi, [esi+30h]
+.text:0045BDD3                 test    esi, esi
+.text:0045BDD5                 jz      short loc_45BDFF
+.text:0045BDD7                 cmp     byte ptr [esp+8], 0
+.text:0045BDDC                 mov     edx, [esi+4]
+.text:0045BDDF                 lea     ecx, [esi+4]
+.text:0045BDE2                 pop     esi
+.text:0045BDE3                 jz      short loc_45BDF2
+.text:0045BDE5                 mov     dword ptr [esp+4], 0
+.text:0045BDED                 mov     eax, [edx+78h]
+.text:0045BDF0                 jmp     eax
+.text:0045BDF2 ; ---------------------------------------------------------------------------
+.text:0045BDF2
+.text:0045BDF2 loc_45BDF2:                             ; CODE XREF: sub_45BD40+A3j
+.text:0045BDF2                 mov     dword ptr [esp+4], 0
+.text:0045BDFA                 mov     eax, [edx+74h]
+.text:0045BDFD                 jmp     eax
+.text:0045BDFF ; ---------------------------------------------------------------------------
+.text:0045BDFF
+.text:0045BDFF loc_45BDFF:                             ; CODE XREF: sub_45BD40+13j
+.text:0045BDFF                                         ; sub_45BD40+95j
+.text:0045BDFF                 pop     esi
+.text:0045BE00                 retn    4
+.text:0045BE00 sub_45BD40      endp ; sp-analysis failed
