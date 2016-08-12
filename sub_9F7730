@@ -1,0 +1,4 @@
+.text:009F7730 sub_9F7730      proc near
+.text:009F7730                 xor     eax, eax
+.text:009F7732                 retn    4
+.text:009F7732 sub_9F7730      endp
