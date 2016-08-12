@@ -1,0 +1,12 @@
+.rdata:02395508 aHide_0:                                ; DATA XREF: sub_143B960+AEo
+.rdata:02395508                 unicode 0, <Hide>,0
+.rdata:02395512                 align 4
+.rdata:02395514 aUmstarseqact_p:                        ; DATA XREF: sub_144EDE0+77o
+.rdata:02395514                 unicode 0, <UMStarSeqAct_PerformMessage>,0
+.rdata:0239554C aUmstarinterptr:                        ; DATA XREF: sub_14496B0+77o
+.rdata:0239554C                 unicode 0, <UMStarInterpTrackEvent>,0
+.rdata:0239557A                 align 4
+.rdata:0239557C aUmstareventdat:                        ; DATA XREF: sub_1445900+77o
+.rdata:0239557C                 unicode 0, <UMStarEventData>,0
+.rdata:0239559C aUmstarexceldat:                        ; DATA XREF: sub_14459B0+77o
+.rdata:0239559C                 unicode 0, <UMStarExcelData>,0
