@@ -19,3 +19,11 @@ GameGuard launcher kodları aranıyor.
 --------------
 
 bilinmeyenler dosyalarına yukarıdan olaşabilir kodlarını görebilirsiniz. Makine dili kodlarına bakarak bize neler söylediklerine kestirebilirsiniz.
+
+# MD5 CRC32
+
+MD5   : 65BCFD8B616069BED07BD64863D0CF6B
+
+-------
+
+Input CRC32 : 286A171D
