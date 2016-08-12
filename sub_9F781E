@@ -1,0 +1,21 @@
+.text:009F77EF ; ---------------------------------------------------------------------------
+.text:009F77F2                 align 10h
+.text:009F7800                 mov     eax, [esp+4]
+.text:009F7804                 test    eax, eax
+.text:009F7806                 jz      short sub_9F781E
+.text:009F7808                 cmp     dword_2970D14, 0
+.text:009F780F                 jnz     short sub_9F781E
+.text:009F7811                 mov     [ecx+48h], eax
+.text:009F7814                 mov     eax, [ecx]
+.text:009F7816                 mov     edx, [eax+128h]
+.text:009F781C                 call    edx
+.text:009F781E
+.text:009F781E ; =============== S U B R O U T I N E =======================================
+.text:009F781E
+.text:009F781E ; Attributes: library function
+.text:009F781E
+.text:009F781E sub_9F781E      proc near               ; CODE XREF: .text:009F7806j
+.text:009F781E                                         ; .text:009F780Fj
+.text:009F781E                 xor     eax, eax
+.text:009F7820                 retn    4
+.text:009F7820 sub_9F781E      endp
