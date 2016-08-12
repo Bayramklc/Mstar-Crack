@@ -6,7 +6,7 @@ Mstar para gideceği yerde tekrar geri getireceği ve mstar kapanırken site aç
 
 # Gün 1
 
-3 tane bilinmeyen bulundu bilinmeyenler test ediliyor.
+Mov eax kodları değiştirilerek sistemde giden üzerimdeki eşyalar veya birimler + olarak belirli sayıda getirilmesi denemesi başarılı oldu. 0 olan sistemlerde hatalar giderilmesi düzenleniyor
 
 -------------
 
@@ -19,11 +19,3 @@ GameGuard launcher kodları aranıyor.
 --------------
 
 bilinmeyenler dosyalarına yukarıdan olaşabilir kodlarını görebilirsiniz. Makine dili kodlarına bakarak bize neler söylediklerine kestirebilirsiniz.
-
-
-# unknown file
-
-
-sub_401050
-sub_9F7730
-sub_9F781E
