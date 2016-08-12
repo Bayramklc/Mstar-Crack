@@ -1,6 +1,6 @@
 # Mstar-Crack
 
-Mstar para gideceği yerde tekrar geri getireceği ve mstar kapanırken site açılması kapatılacak. Aynı süreç içerisinde tersine mühendislik ile bir çok işlemden bizen para şeker puan veya yıldız gitmesi yerine geri gelmesi planlanıyor.
+Mstar para gideceği yerde tekrar geri getireceği ve mstar kapanırken site açılması kapatılacak. Aynı süreç içerisinde tersine mühendislik ile bir çok işlemden bize para şeker puan veya yıldız gitmesi yerine geri gelmesi yapılması planlanıyor.
 
 -------------
 
